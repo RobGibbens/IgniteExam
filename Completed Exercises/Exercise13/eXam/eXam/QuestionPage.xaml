@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="eXam.QuestionPage"
+             Title="eXam">
+    <ContentPage.Content>
+        <Grid Padding="10">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="Auto" />
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition />
+                <ColumnDefinition />
+            </Grid.ColumnDefinitions>
+
+            <Label Text="{Binding Question}" Grid.Row="0" Grid.Column="0"  Grid.ColumnSpan="2" />
+            <Button Text="True" Grid.Row="1" Grid.Column="0" />
+            <Button Text="False" Grid.Row="1" Grid.Column="1" />
+            <Label Text="Answer Text Default" Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="2" />
+            <Button Text="Next" Grid.Row="3" Grid.Column="1" />
+        </Grid>
+
+    </ContentPage.Content>
+</ContentPage>

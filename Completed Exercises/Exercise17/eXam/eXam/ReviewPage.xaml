@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="eXam.ReviewPage">
+    <ContentPage.Content>
+        <ListView 
+    x:Name="listQuestions" 
+    HasUnevenRows="True"
+    ItemsSource="{Binding QuestionViewModels}">
+
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell>
+                        <StackLayout>
+                            <Label Text="{Binding Question}" />
+                            <Label Text="{Binding Answer}" />
+                            <Label Text="{Binding Response, StringFormat='Your answer: {0}'}" />
+                        </StackLayout>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+
+    </ContentPage.Content>
+</ContentPage>
