@@ -17,7 +17,7 @@
                             <Label Text="{Binding Answer}" />
                             <Label Text="{Binding Response, StringFormat='Your answer: {0}'}" TextColor="Red">
                                 <Label.Triggers>
-                                    <DataTrigger Binding="{Binding IsCorrect}" TargetType="Label" Value="True" >
+                                    <DataTrigger Binding="{Binding IsCorrect}" TargetType="Label"  Value="True" >
                                         <Setter Property="TextColor" Value="Green" />
                                     </DataTrigger>
                                 </Label.Triggers>

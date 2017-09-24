@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="eXam.SigninPage">
+    <StackLayout VerticalOptions="CenterAndExpand" Padding="30,35">
+
+        <Label Margin="0,10" HorizontalTextAlignment="Center" FontSize="50" Text="eXam" />
+
+        <Label HorizontalTextAlignment="Center" Text="Test your Xamarin Skills with this eXam app" />
+        <Label HorizontalTextAlignment="Center" Text="Start by signing in with Facebook or Twitter"/>
+
+        <Button Text="Facebook Login" BackgroundColor="#3b5998" TextColor="White" Clicked="PerformFacebookLogin"></Button>
+        <Button Text="Twitter Login" BackgroundColor="#1DA1F2" TextColor="White" Clicked="PerformTwitterLogin"></Button>
+
+    </StackLayout>
+</ContentPage>
